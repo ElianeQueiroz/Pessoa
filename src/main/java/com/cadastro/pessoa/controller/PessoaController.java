@@ -39,7 +39,7 @@ public class PessoaController {
         return new ResponseEntity<>(pessoaService.getPessoaById(id), HttpStatus.OK);
     }
 
-    @DeleteMapping("/pessoa/{id}")
+    @DeleteMapping("/pessoa/delete/{id}")
     public boolean deletePessoa(@PathVariable Long id) {
         return pessoaService.deletePessoaById(id);
     }
